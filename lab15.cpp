@@ -16,7 +16,18 @@ class Movie {
     void set_screen_writer(){}
     string get_screen_writer(){}
 
-    
+    void set_year_released(){}
+    int get_year_released(){}
+
+    void set_title(){}
+    string get_title(){}
+
+    void print(){
+        cout << "Movie: " << screen_writer <<endl;
+        cout << "    Year released: " << year_released <<endl;
+        cout << "    Screenwriter: " << title <<endl;
+    }
+
 };
 
 int main() {

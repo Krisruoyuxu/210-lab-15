@@ -41,10 +41,20 @@ int main() {
         return 1;
     }
     // read in the test examples
-    string lines;
-    int years;
-    getline(fin, lines);
-
+    string temp_sc;
+    int temp_year;
+    string temp_title;
+    
+    while(fin >> temp_title){
+        getline(fin, temp_sc);
+        fin >> temp_year;
+        getline(fin, temp_title);
+        Movie temp;
+        temp.set_screen_writer(temp_sc);
+        temp.set_year_released(temp_year);
+        temp.set_title(temp_title);
+        test_movies.push_back(temp);
+    }
 
     return 0;
 }

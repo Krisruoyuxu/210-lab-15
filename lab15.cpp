@@ -46,10 +46,9 @@ int main() {
     string temp_title;
     
     while(getline(fin, temp_title)){
-        getline(fin, temp_sc);
         fin >> temp_year;
         fin.ignore();
-        getline(fin, temp_title);
+        getline(fin, temp_sc);
         Movie temp;
         temp.set_screen_writer(temp_sc);
         temp.set_year_released(temp_year);

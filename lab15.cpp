@@ -32,20 +32,15 @@ class Movie {
 };
 
 int main() {
+    // create a vector to store the objects
+    vector <Movie> test_movies;
+    // open the file and read in the test examples
+    ifstream fin ("text.txt");
+    if (!fin) { // first test if had read the file successfully
+        cerr << "error openint the test.txt" <<endl;
+        return 1;
+    }
     
-    Movie movie1; // just a test now
-    Movie movie2; 
-    movie1.set_screen_writer("TestScreenWriter1");
-    movie1.set_year_released(1000);
-    movie1.set_title("hello");
-
-    movie2.set_screen_writer("TestScreenWriter2");
-    movie2.set_year_released(2000);
-    movie2.set_title("asdf");
-
-    movie2.print();
-
-    movie1.print();
 
 
 

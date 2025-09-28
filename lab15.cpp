@@ -34,14 +34,16 @@ class Movie {
 int main() {
     // create a vector to store the objects
     vector <Movie> test_movies;
-    // open the file and read in the test examples
+    // open the file 
     ifstream fin ("text.txt");
     if (!fin) { // first test if had read the file successfully
         cerr << "error openint the test.txt" <<endl;
         return 1;
     }
-    
-
+    // read in the test examples
+    string lines;
+    int years;
+    getline(fin, lines);
 
 
     return 0;

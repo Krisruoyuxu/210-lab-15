@@ -13,14 +13,14 @@ class Movie {
 
     public:
     // setters and getters
-    void set_screen_writer(){}
-    string get_screen_writer(){}
+    void set_screen_writer(string input){ screen_writer = input; }
+    string get_screen_writer(){ return screen_writer; }
 
-    void set_year_released(){}
-    int get_year_released(){}
+    void set_year_released(int input){ year_released = input; }
+    int get_year_released(){ return year_released; }
 
-    void set_title(){}
-    string get_title(){}
+    void set_title(string input){ title = input; }
+    string get_title(){ return title; }
 
     void print(){
         cout << "Movie: " << title <<endl;
@@ -32,7 +32,9 @@ class Movie {
 
 int main() {
     
-    
+    Movie movie1;
+    movie1.set_screen_writer("TestScreenWriter1");
+    movie1.
 
     return 0;
 }

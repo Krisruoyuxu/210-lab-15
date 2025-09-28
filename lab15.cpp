@@ -23,9 +23,9 @@ class Movie {
     string get_title(){}
 
     void print(){
-        cout << "Movie: " << screen_writer <<endl;
+        cout << "Movie: " << title <<endl;
         cout << "    Year released: " << year_released <<endl;
-        cout << "    Screenwriter: " << title <<endl;
+        cout << "    Screenwriter: " << screen_writer <<endl;
     }
 
 };

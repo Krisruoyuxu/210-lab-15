@@ -45,9 +45,10 @@ int main() {
     int temp_year;
     string temp_title;
     
-    while(fin >> temp_title){
+    while(getline(fin, temp_title)){
         getline(fin, temp_sc);
         fin >> temp_year;
+        fin.ignore();
         getline(fin, temp_title);
         Movie temp;
         temp.set_screen_writer(temp_sc);
@@ -55,6 +56,12 @@ int main() {
         temp.set_title(temp_title);
         test_movies.push_back(temp);
     }
+    fin.close();
+    // Then let's output our testmovies
+    for (auto movies: test_movies){
+        movies.print();
+    }
+
 
     return 0;
 }
